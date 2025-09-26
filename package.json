@@ -1,0 +1,41 @@
+{
+	"name": "template_app",
+	"version": "0.0.1",
+	"main": "index.ts",
+	"description": "Шаблонное приложение",
+	"author": "kvazar",
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"start": "npx webpack serve",
+		"start:long-syntax-example": "npx webpack serve --env NODE_ENV=development --env PORT=3000 --env PUBLIC_PATH=auto --env BASE_NAME=/",
+		"build": "npx webpack --env NODE_ENV=production --env PUBLIC_PATH=/",
+		"lint": "prettier \"**/*.{ts,tsx}\" --check && eslint \"**/*.{ts,tsx}\"",
+		"lint:fix": "prettier \"**/*.{ts,tsx}\" --write && eslint \"**/*.{ts,tsx}\" --fix"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "2.8.2",
+		"@rtk-incubator/rtk-query": "2.0.0",
+		"react": "18.3.1",
+		"react-dom": "18.3.1",
+		"react-hook-form": "7.56.1",
+		"react-redux": "9.2.0",
+		"react-router-dom": "6.30.1"
+	},
+	"devDependencies": {
+		"@types/node": "22.18.6",
+		"@types/react": "18.3.24",
+		"@types/react-dom": "18.3.7",
+		"eslint": "9.36.0",
+		"npm-check-updates": "^17.1.18",
+		"prettier": "^3.6.2",
+		"react-router": "6.30.1",
+		"ts-node": "10.9.2",
+		"ts-prune": "0.10.3",
+		"typescript": "5.9.2",
+		"webpack": "^5.101.3",
+		"webpack-cli": "^6.0.1",
+		"webpack-dev-server": "^5.2.2"
+	}
+}
