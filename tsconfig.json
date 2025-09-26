@@ -4,15 +4,16 @@
 		"target": "ES2023",
 		"moduleResolution": "node",
 		"jsx": "react-jsx",
-		"strict": true,
 		"esModuleInterop": true,
+		"strict": true,
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
 		"sourceMap": true,
 		"importHelpers ": true,
-		"allowSyntheticDefaultImports": true,
-		"outDir": "dist",
+		"plugins": [{ "name": "typescript-plugin-css-modules" }]
 	},
+	"outDir": "./dist/",
+	"include": ["src/**/*"],
 	"exclude": [ "dist", "node_modules" ]
 }
