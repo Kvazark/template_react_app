@@ -3,6 +3,7 @@
 		"module": "ESNext",
 		"target": "ES2023",
 		"moduleResolution": "node",
+		"baseUrl": "src",
 		"jsx": "react-jsx",
 		"esModuleInterop": true,
 		"strict": true,
@@ -10,8 +11,12 @@
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
 		"sourceMap": true,
-		"importHelpers ": true,
-		"plugins": [{ "name": "typescript-plugin-css-modules" }]
+		"importHelpers": true,
+		"plugins": [
+			{
+				"name": "typescript-plugin-css-modules"
+			}
+		]
 	},
 	"outDir": "./dist/",
 	"include": ["src/**/*"],
