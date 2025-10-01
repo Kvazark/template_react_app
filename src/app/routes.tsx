@@ -5,7 +5,7 @@ import { ErrorPage } from 'pages/ErrorPage'
 import { MainPage } from 'pages/MainPage'
 import { NotFoundPage } from 'pages/NotFoundPage'
 import { RoutePath } from 'shared/constants'
-import { Wrapper } from "./ui";
+import { Wrapper } from './ui'
 
 export const router = createBrowserRouter(
     [
@@ -28,5 +28,5 @@ export const router = createBrowserRouter(
             ],
         },
     ],
-    { basename: BASE_NAME },
+    { basename: BASE_NAME }
 )

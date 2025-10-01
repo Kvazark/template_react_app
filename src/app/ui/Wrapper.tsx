@@ -1,6 +1,6 @@
-import {RoutePath} from "../../shared/constants";
-Перенос по строкам
+import { RoutePath } from '../../shared/constants'
 import { Link, Outlet } from 'react-router-dom'
+
 export const Wrapper = () => {
     return (
         <div>

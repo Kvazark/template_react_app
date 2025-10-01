@@ -1,7 +1,8 @@
-import type { TBuildMode } from 'react-app-constants/webpack'
+import type { TBuildMode } from 'react-app-constants/webpackф'
+import type { FunctionComponent, SVGAttributes } from 'react'
 
 declare module '*.svg' {
-    const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>
+    const content: FunctionComponent<SVGAttributes<SVGElement>>
     export default content
 }
 
