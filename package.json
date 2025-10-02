@@ -8,7 +8,7 @@
 		"node": ">=22"
 	},
 	"scripts": {
-		"start": "npx webpack serve --config webpack.config.ts --node-env development",
+		"start": "npx webpack serve",
 		"start:long-syntax-example": "npx webpack serve --env NODE_ENV=development --env PORT=3000 --env PUBLIC_PATH=auto --env BASE_NAME=/",
 		"build": "npx webpack --env NODE_ENV=production --env PUBLIC_PATH=/",
 		"lint": "prettier \"**/*.{ts,tsx}\" --check && eslint \"**/*.{ts,tsx}\"",
