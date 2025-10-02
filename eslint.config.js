@@ -8,7 +8,7 @@ import prettierConfig from 'eslint-config-prettier'
 export default [
     // Общие игнорируемые директории вместо файла .eslintignore
     {
-        ignores: ['node_modules/**', 'dist/**', 'bin/**', 'public/**', 'build/**', 'configs/**'],
+        ignores: ['node_modules/**', 'dist/**', 'bin/**', 'public/**', 'build/**', 'configs/webpack/lib/constants.ts'],
     },
     // Базовые рекомендации JS
     jsConfig.configs.recommended,
@@ -19,7 +19,14 @@ export default [
             parser: tsParser,
             sourceType: 'module',
             ecmaVersion: 'latest',
-            globals: globals.browser,
+            globals: {
+                ...globals.browser,
+                IS_DEV: 'readonly',
+                NODE_ENV: 'readonly',
+                PORT: 'readonly',
+                PUBLIC_PATH: 'readonly',
+                BASE_NAME: 'readonly',
+            },
         },
         plugins: {
             '@typescript-eslint': tsPlugin,
