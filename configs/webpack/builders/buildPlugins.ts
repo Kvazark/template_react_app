@@ -10,8 +10,8 @@ type TBuildPlugins = (options: TBuildOptions) => WebpackPluginInstance[]
  * Configures the plugins to be used during the webpack build process.
  */
 export const buildPlugins: TBuildPlugins = (options) => {
-  const htmlWebpackPlugin = buildHtmlWebpackPlugin()
-  const definePlugin = buildDefinePlugin(options)
+    const htmlWebpackPlugin = buildHtmlWebpackPlugin()
+    const definePlugin = buildDefinePlugin(options)
 
-  return [htmlWebpackPlugin, definePlugin]
+    return [htmlWebpackPlugin, definePlugin]
 }

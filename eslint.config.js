@@ -8,7 +8,7 @@ import prettierConfig from 'eslint-config-prettier'
 export default [
     // Общие игнорируемые директории вместо файла .eslintignore
     {
-        ignores: ['node_modules/**', 'dist/**', 'bin/**', 'public/**', 'build/**'],
+        ignores: ['node_modules/**', 'dist/**', 'bin/**', 'public/**', 'build/**', 'configs/**'],
     },
     // Базовые рекомендации JS
     jsConfig.configs.recommended,

@@ -7,12 +7,12 @@ type TBuildDevServer = (options: TBuildOptions) => TDevServerConfiguration | und
  * Configures the webpack-dev-server for local development.
  */
 export const buildDevServer: TBuildDevServer = ({ PORT, isDev }) => {
-  if (isDev) {
-    return {
-      port: PORT,
-      open: true,
-      hot: true,
-      historyApiFallback: true,
+    if (isDev) {
+        return {
+            port: PORT,
+            open: true,
+            hot: true,
+            historyApiFallback: true,
+        }
     }
-  }
 }

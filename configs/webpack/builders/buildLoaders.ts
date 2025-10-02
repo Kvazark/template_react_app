@@ -9,9 +9,9 @@ type TBuildLoaders = (options: TBuildOptions) => RuleSetRule[]
  * Configures the loaders (rules) for processing different file types in the project.
  */
 export const buildLoaders: TBuildLoaders = (options) => {
-  const typescriptLoader = buildTypescriptLoader(options)
-  const cssLoader = buildCssLoader()
-  const svgLoader = buildSvgLoader()
+    const typescriptLoader = buildTypescriptLoader(options)
+    const cssLoader = buildCssLoader()
+    const svgLoader = buildSvgLoader()
 
-  return [typescriptLoader, cssLoader, svgLoader]
+    return [typescriptLoader, cssLoader, svgLoader]
 }
