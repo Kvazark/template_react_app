@@ -3,9 +3,6 @@ import type { Configuration as TDevServerConfiguration } from 'webpack-dev-serve
 
 type TBuildDevServer = (options: TBuildOptions) => TDevServerConfiguration | undefined
 
-/**
- * Configures the webpack-dev-server for local development.
- */
 export const buildDevServer: TBuildDevServer = ({ PORT, isDev }) => {
     if (isDev) {
         return {
